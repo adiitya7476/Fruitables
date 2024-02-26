@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -15,7 +17,7 @@ import { CartComponent } from './cart/cart.component';
   standalone: true,
   imports: [RouterOutlet,HeaderComponent,LoginRegComponent,
     HomeComponent,FooterComponent,AboutComponent,ProductsComponent,
-    CartComponent
+    CartComponent,CheckoutComponent,AdminComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

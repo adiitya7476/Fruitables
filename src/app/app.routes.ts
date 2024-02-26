@@ -6,6 +6,8 @@ import { LoginRegComponent } from './login-reg/login-reg.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
+import { AdminComponent } from './admin/admin.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 export const routes: Routes = [
     {path:'',component:LoginRegComponent},
@@ -13,6 +15,9 @@ export const routes: Routes = [
     {path:'about',component:AboutComponent},
     {path:'products',component:ProductsComponent},
     {path:'cart',component:CartComponent},
+    {path:'admin',component:AdminComponent},
+    {path:'checkout',component:CheckoutComponent},
+
 ];
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

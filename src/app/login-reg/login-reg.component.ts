@@ -14,8 +14,8 @@ export class LoginRegComponent implements OnInit{
   ngOnInit(): void {
   }
   adityaURl="./assets/img/aditya.jpeg";
-  vishveshURL="./assets/img/vishvesh1.jpg";
-  satyamURL="./assets/img/satyam.jpg";
+  vishveshURL="./assets/img/vishvesh.jpg";
+  satyamURL="./assets/img/satyam.JPG";
   krushnatURL="./assets/img/krushnat.jpg";
 
 }
