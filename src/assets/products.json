@@ -1,0 +1,20 @@
+[
+    {
+        "imageUrl": "assets/img/products/product-img-1.jpg",
+        "name":"Strawberry",
+        "unit":"per kg",
+        "price":100
+    },
+    {
+        "imageUrl": "assets/img/products/product-img-2.jpg",
+        "name":"Berry",
+        "unit":"per kg",
+        "price":300  
+    },
+    {
+        "imageUrl": "assets/img/products/product-img-3.jpg",
+        "name":"Lemon",
+        "unit":"per kg",
+        "price":170  
+    }
+]

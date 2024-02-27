@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminComponent } from './admin/admin.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -17,7 +18,7 @@ import { AdminComponent } from './admin/admin.component';
   standalone: true,
   imports: [RouterOutlet,HeaderComponent,LoginRegComponent,
     HomeComponent,FooterComponent,AboutComponent,ProductsComponent,
-    CartComponent,CheckoutComponent,AdminComponent,
+    CartComponent,CheckoutComponent,AdminComponent,HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
