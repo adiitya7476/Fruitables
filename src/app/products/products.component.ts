@@ -11,13 +11,17 @@ import { CommonModule } from '@angular/common';
   styleUrl: './products.component.css'
 })
 export class ProductsComponent implements OnInit{
-  products:any[]=[];
+  fruits:any[]=[];
+  vegetables:any[]=[];
 
   constructor(private http:HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('assets/products.json').subscribe((data:any)=>{
-      this.products=data;
+    this.http.get('assets/json/fruits.json').subscribe((Fruitdata:any)=>{
+      this.fruits=Fruitdata;
+    });
+    this.http.get('assets/json/vegetables.json').subscribe((Vegetabledata:any)=> {
+      this.vegetables= Vegetabledata;
     })
   }
 }

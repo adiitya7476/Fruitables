@@ -11,16 +11,9 @@
                 </div>
                 
             </div>
-            <div class="col-md-12 col-lg-5">
-                <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
-
 
 <!-- product section -->
 <div class="product-gap">
@@ -34,209 +27,42 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 text-center">
-                <div *ngFor="let product of products">
-                <div class="single-product-item">
+            <!--FRUITS SECTION START-->
+                <div *ngFor="let fruit of fruits" class="col-lg-4 text-center" >     
+                <div class="single-product-item col lg-4">
                     <div class="product-image">
-                        <a href="single-product.html"><img [src]="product.imageUrl" alt="{{product.name}} Image"></a>
+                        <a href="single-product.html"><img [src]="fruit.imageUrl" alt="{{fruit.name}} Image"></a>
                     </div>
-                    <h3>{{product.name}}</h3>
-                    <p class="product-price"><span>{{product.unit}}</span> {{product.price}} </p>
+                    <h3>{{fruit.name}}</h3>
+                    <p class="product-price"><span>{{fruit.unit}}</span> {{fruit.price}} ₹ </p>
                     <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                 </div>
             </div>
-        </div>
-        </div>
-           <!-- <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
-                    </div>
-                    <h3>Berry</h3>
-                    <p class="product-price"><span>Per Kg</span> 300₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
-                    </div>
-                    <h3>Lemon</h3>
-                    <p class="product-price"><span>Per Kg</span> 170₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/banana.jpg" alt=""></a>
-                    </div>
-                    <h3>Banana</h3>
-                    <p class="product-price"><span>Per Dozen </span> 40₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/orange.jpg" alt=""></a>
-                    </div>
-                    <h3>Oranges</h3>
-                    <p class="product-price"><span>Per Kg</span> 120₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/grapes.jpg" alt=""></a>
-                    </div>
-                    <h3>Grapes</h3>
-                    <p class="product-price"><span>Per Kg</span> 55₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/mango.jpg" alt=""></a>
-                    </div>
-                    <h3>Mango</h3>
-                    <p class="product-price"><span>Per Dozen</span> 550₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/apple.jpg" alt=""></a>
-                    </div>
-                    <h3>Apples</h3>
-                    <p class="product-price"><span>Per Kg</span> 320₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/pineapple.jpg" alt=""></a>
-                    </div>
-                    <h3>Pineapple</h3>
-                    <p class="product-price"><span>Per Kg</span> 35₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/guava.jpg" alt=""></a>
-                    </div>
-                    <h3>Guava</h3>
-                    <p class="product-price"><span>Per Kg</span> 80₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/watermelon.jpg" alt=""></a>
-                    </div>
-                    <h3>Watermelon</h3>
-                    <p class="product-price"><span>Per Piece</span> 35₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/pomegranate.jpg" alt=""></a>
-                    </div>
-                    <h3>Pomegranate</h3>
-                    <p class="product-price"><span>Per Kg</span> 130₹ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
+        
+        <!--FRUITS SECTION END-->
+           
+      <!--START OF VEGETABLES SECTION-->
 
             <div class="col-lg-8 offset-lg-2 text-center">
                 <label class="veges">V E G E T A B L E S</label>
                 <br><br>
             </div>
 
-            <div class="col-lg-4 col-md-6 text-center">
+            <div *ngFor="let vegetable of vegetables" class="col-lg-4 col-md-6 text-center">
                 <div class="single-product-item">
                     <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/onion.jpg" alt=""></a>
+                        <a href="#"><img [src]="vegetable.imageUrl" alt="{{vegetable.name}}"></a>
                     </div>
-                    <h3>Onoin</h3>
-                    <p class="product-price"><span>Per Kg</span> 20₹ </p>
-                    <a href="cart.html" class="button-3"><i class="fas fa-shopping-cart"></i>Add to Cart</a>          
+                    <h3>{{vegetable.name}}</h3>
+                    <p class="product-price"><span>{{vegetable.unit}}</span> {{vegetable.price}} ₹ </p>
+                    <a href="#" class="button-3"><i class="fas fa-shopping-cart"></i>Add to Cart</a>          
                       </div>
-            </div>
+                    </div>             
+        </div>
 
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/tomato.jpg" alt=""></a>
-                    </div>
-                    <h3>Tomato</h3>
-                    <p class="product-price"><span>Per Kg</span> 25₹ </p>
-                    <a href="cart.html" class="button-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/brinjal.jpg" alt=""></a>
-                    </div>
-                    <h3>Brinjal</h3>
-                    <p class="product-price"><span>Per Kg</span> 20₹ </p>
-                    <a href="cart.html" class="button-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/carrot.jpg" alt=""></a>
-                    </div>
-                    <h3>Carrot</h3>
-                    <p class="product-price"><span>Per Kg</span> 30₹ </p>
-                    <a href="cart.html" class="button-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/potato.jpg" alt=""></a>
-                    </div>
-                    <h3>Potato</h3>
-                    <p class="product-price"><span>Per Kg</span> 15₹ </p>
-                    <a href="cart.html" class="button-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src="assets/img/products/garlic.jpg" alt=""></a>
-                    </div>
-                    <h3>Garlic</h3>
-                    <p class="product-price"><span>Per Kg</span> 100₹ </p>
-                    <a href="cart.html" class="button-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-
-    
+        <!--END OF VEGETABLES SECTION-->
         </div>
     </div>
 </div>
-</div>-->
+
 <!-- end product section -->

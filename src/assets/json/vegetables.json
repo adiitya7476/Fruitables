@@ -1,0 +1,38 @@
+[
+    {
+        "imageUrl": "assets/img/products/onion.jpg",
+        "name":"Onion",
+        "unit":"per kg",
+        "price":20
+    },
+    {
+        "imageUrl": "assets/img/products/tomato.jpg",
+        "name":"Tomato",
+        "unit":"per kg",
+        "price":25
+    },
+    {
+        "imageUrl": "assets/img/products/brinjal.jpg",
+        "name":"Brinjal",
+        "unit":"per kg",
+        "price":20
+    },
+    {
+        "imageUrl": "assets/img/products/carrot.jpg",
+        "name":"Carrot",
+        "unit":"per kg",
+        "price":30
+    },
+    {
+        "imageUrl": "assets/img/products/potato.jpg",
+        "name":"Potato",
+        "unit":"per kg",
+        "price":25
+    },
+    {
+        "imageUrl": "assets/img/products/garlic.jpg",
+        "name":"Garlic",
+        "unit":"per kg",
+        "price":100
+    }
+]
